@@ -12,6 +12,7 @@ indicatorItems[i].classList.add('active');
 
 btnNext.addEventListener('click', function (e) {
     e.preventDefault()
+    
 
    i += 1;
    if (i >= allTab.length) {

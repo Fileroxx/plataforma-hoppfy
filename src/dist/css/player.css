@@ -309,20 +309,20 @@ header .ul-profile a:hover {
 
 #player .player .tabs .eps::-webkit-scrollbar-track{
     background: #FFF;
-    border-radius: 10px;
+    
 }
 
 #player .player .tabs .eps::-webkit-slider-thumb {
-    border-radius: 10px;
+
  
     
 }
 
 #player .player .tabs .ep {
-    background: linear-gradient(rgba(255,255,255,.2), rgba(0,0,0,01) 110%);
+    
     padding: 1rem;
     cursor: pointer;
-    border-left: 3px solid #1bc9f0;
+    border-left: 3px solid #7601e0;
     display: flex;
     width: 90%;
     transition: .3s ease-in all;
@@ -330,14 +330,19 @@ header .ul-profile a:hover {
 
 }
 
-#player .player .tabs .ep:hover {
-    transform: scale(1.02);
-}
+
 
 #player .player .tabs .ep .banner img {
    width: 150px;
-    border-radius: 10px;
+   transition: .5s;
+
 }
+
+#player .player .tabs .ep .banner img:hover {
+    transform: scale(1.02);
+ 
+ }
+
 
 #player .player .tabs .ep .texto {
     padding-left: 0rem;
@@ -381,13 +386,13 @@ header .ul-profile a:hover {
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius: 5px;
+
     transition: .3s ease-in all;
 }
 
 #player .player .controles-desktop .next button:hover {
-    color: #1bc9f0;
-    border: 1px solid #1bc9f0;
+    color: #7601e0;
+    border: 1px solid #7601e0;
 }
 
 
@@ -437,9 +442,7 @@ h4 {
     padding-bottom: 2rem;
 }
 
-#player .player .video iframe {
-    border-radius: 10px;
-}
+
 
 
 @media screen and (min-width: 992px) {
