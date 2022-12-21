@@ -16,9 +16,12 @@
 
 </head>
 <body>
+    
 
+ 
 
 <main>
+
 
     
     <div class="intro">
@@ -47,8 +50,8 @@
                     <li><a href="/conteudos.html">Conteúdos</a></li>
                     <li><a href="#">Suporte</a></li>
                     <div class="mobile">
-                        <li><a href="#">Meu perfil</a></li>
-                        <li><a href="/conteudos.html">Meu progresso</a></li>
+                        <li><a href="/perfil.html">Meu perfil</a></li>
+                        <li><a href="/perfil.html">Assinaturas</a></li>
                         <li class="profile"><a href="/login.html" style="color: red;">Desconectar</a></li>
                     </div>
     
@@ -69,12 +72,12 @@
             <div class="dropdown">
                 <ul class="ul-profile">
                     <li>
-                        <a href="#">
-                            <i class="fa-solid fa-trophy"></i> Meu progresso
+                        <a href="/perfil.html">
+                            <i class="fa-solid fa-credit-card"></i> Assinaturas
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/perfil.html">
                             <i class="fa-solid fa-user"></i> Meu perfil
                         </a>
                     <li>
@@ -91,9 +94,40 @@
 
     </header>
 
+ 
+
     <div class="inner">
 
-   
+        
+
+<!-- The Modal 
+<div id="myModal" class="modal-aviso">
+
+  
+    <div class="modal-aviso-content">
+      <div class="modal-aviso-header">
+        <span class="close-aviso">&times;</span>
+        <h2>Saindo do Caos - Evento Presencial</h2>
+        <img class="img-fluid" src="assets/Capa-Formulário.png" alt="">
+      </div>
+      <div class="modal-aviso-body">
+        <form action="">
+            <input type="text" placeholder="Nome completo">
+            <br>
+            <input type="text" placeholder="E-mail">
+            <br>
+            <input type="text" placeholder="WhatsApp">
+            <br>
+            <button>QUERO PARTICIPAR</button>
+        </form> 
+      </div>
+      <div class="modal-aviso-footer">
+        <p>Mais informações, clique no botão do WhatsApp para tirar suas dúvidas.**</p>
+      </div>
+    </div>
+  
+  </div>
+    -->
            
             <div id="carouselExampleIndicators" class="carousel slide w-100" data-bs-ride="true">
                 <div class="carousel-indicators">
@@ -116,7 +150,7 @@
                                     </p>
                                 <div class="banner-button">
                                     <a href="/player.html"><button class="btn"><span class="fa fa-play play" aria-hidden="true" style="padding-right: 5px"></span>Assistir Agora</button></a>
-                                    <button class="btn btn1"><span class="fa fa-info-circle play info" aria-hidden="true" style="padding-right: 5px"></span>Saiba Mais</button>
+                                    <a href="/episodios.html"><button class="btn btn1"><span class="fa fa-info-circle play info" aria-hidden="true" style="padding-right: 5px"></span>Saiba Mais</button></a>
                                 </div>
                                 </div>
                                 
@@ -149,7 +183,7 @@
                                     </p>
                                 <div class="banner-button">
                                     <a href="/player.html"><button class="btn"><span class="fa fa-play play" aria-hidden="true" style="padding-right: 5px"></span>Assistir Agora</button></a>
-                                    <button class="btn btn1"><span class="fa fa-info-circle play info" aria-hidden="true" style="padding-right: 5px"></span>Saiba Mais</button>
+                                    <a href="/episodios.html"><button class="btn btn1"><span class="fa fa-info-circle play info" aria-hidden="true" style="padding-right: 5px"></span>Saiba Mais</button></a>
                                 </div>
                                 </div>
      
@@ -180,7 +214,7 @@
                                     </p>
                                 <div class="banner-button">
                                     <a href="/player.html"><button class="btn"><span class="fa fa-play play" aria-hidden="true" style="padding-right: 5px"></span>Assistir Agora</button></a>
-                                    <button class="btn btn1"><span class="fa fa-info-circle play info" aria-hidden="true" style="padding-right: 5px"></span>Saiba Mais</button>
+                                    <a href="/episodios.html"><button class="btn btn1"><span class="fa fa-info-circle play info" aria-hidden="true" style="padding-right: 5px"></span>Saiba Mais</button></a>
                                 </div>
                                 </div>
                             
@@ -235,13 +269,7 @@
 </main>
 
 
-<section id="anuncio">
-    <div class="container">
-        <h1>AREA BANNER DE ANUNCIO (AULAS, SÉRIES NOVAS PROMOCÕES)</h1>
-    </div>
-   
 
-</section>
 
 <section id="assistidos">
     <div class="container">
@@ -360,6 +388,8 @@
 </section>
 
 
+
+
 <section id="conteudos">
     <div class="container">
         <h4>Para você</h4>
@@ -371,8 +401,9 @@
               <div class="swiper-slide">
                 <div class="card-content">
                     <!--width: 532px observacao-->
-                    <img src="assets/banner-caos.png" alt="">
-
+                    <a href="episodios.html">
+                        <img src="assets/banner-caos.png" alt="">
+                      </a>
                     
                 </div>
               </div>
@@ -381,32 +412,37 @@
               <div class="swiper-slide">
                 <div class="card-content">
                     <!--width: 532px observacao-->
-                    <img src="assets/banner-caos.png" alt="">
-                    
+                    <a href="episodios.html">
+                        <img src="assets/banner-caos.png" alt="">
+                      </a>
                 </div>
               </div>
     
               <div class="swiper-slide">
                 <div class="card-content">
                     <!--width: 532px observacao-->
-                    <img src="assets/banner-caos.png" alt="">
-                    
+                    <a href="episodios.html">
+                        <img src="assets/banner-caos.png" alt="">
+                      </a>
                 </div>
               </div>
     
               <div class="swiper-slide">
                 <div class="card-content">
                           <!--width: 532px observacao-->
-                          <img src="assets/banner-caos.png" alt="">
-                    
+                          <a href="episodios.html">
+                            <img src="assets/banner-caos.png" alt="">
+                          </a>
+                         
                 </div>
               </div>
     
               <div class="swiper-slide">
                 <div class="card-content">
                      <!--width: 532px observacao-->
-                     <img src="assets/banner-caos.png" alt="">
-                    
+                     <a href="episodios.html">
+                        <img src="assets/banner-caos.png" alt="">
+                      </a>
                 </div>
               </div>
               
@@ -434,45 +470,44 @@
               <!-- Slides -->
               <div class="swiper-slide">
                 <div class="card-content">
-                    <img src="https://assets.finclass.com/app/_c/a66bf7a4-a538-4467-ac9b-36911f7dfd19/poster/P_felipe_arrais.jpg" alt="">
-                    
-
-                    
-                </div>
-              </div>
-    
-              <div class="swiper-slide">
-                <div class="card-content">
-                    <img  class="img-fluid" src="https://assets.finclass.com/app/_c/a66bf7a4-a538-4467-ac9b-36911f7dfd19/poster/P_felipe_arrais.jpg" alt="">
-                
-
-    
-                </div>
-              </div>
-    
-    
-              <div class="swiper-slide">
-                <div class="card-content">
-                    <img src="https://assets.finclass.com/app/_c/a66bf7a4-a538-4467-ac9b-36911f7dfd19/poster/P_felipe_arrais.jpg" alt="">
-                    
-
+                    <a href="episodios.html">
+                        <img src="assets/banner-caos.png" alt="">
+                      </a>
                     
                 </div>
               </div>
     
               <div class="swiper-slide">
                 <div class="card-content">
-                    <img src="https://assets.finclass.com/app/_c/a66bf7a4-a538-4467-ac9b-36911f7dfd19/poster/P_felipe_arrais.jpg" alt="">
-
+                    <a href="episodios.html">
+                        <img src="assets/banner-caos.png" alt="">
+                      </a>
+                </div>
+              </div>
+    
+    
+              <div class="swiper-slide">
+                <div class="card-content">
+                    <a href="episodios.html">
+                        <img src="assets/banner-caos.png" alt="">
+                      </a>
                     
                 </div>
               </div>
     
               <div class="swiper-slide">
                 <div class="card-content">
-                    <img src="https://assets.finclass.com/app/_c/a66bf7a4-a538-4467-ac9b-36911f7dfd19/poster/P_felipe_arrais.jpg" alt="">
-
-                    
+                    <a href="episodios.html">
+                        <img src="assets/banner-caos.png" alt="">
+                      </a>
+                </div>
+              </div>
+    
+              <div class="swiper-slide">
+                <div class="card-content">
+                    <a href="episodios.html">
+                        <img src="assets/banner-caos.png" alt="">
+                      </a>
                 </div>
               </div>
               
@@ -488,19 +523,14 @@
   
 </section>
 
-<section id="trilhas">
-    <div class="container">
-        <h1>CARROSSEL PARA AULAS (RELACIONAMENTO, BUSINESS E ESPIRITUAL) SEPARADOS</h1>
-    </div>
-    
-</section>
+
 
 
 <footer>
 
     <div class="container">
         <div class="logo">
-            <img class="img-fluid" src="assets/icone.png" alt="">
+            <img class="img-fluid" src="assets/hoppfy-logo.png" alt="">
         </div>
     
         <p>

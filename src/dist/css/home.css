@@ -328,7 +328,6 @@ header {
     
         width: 100% !important;
         margin: 0 auto;
-        height: 100vh;
         position: relative;
         display: flex;
         flex-wrap: wrap;
@@ -352,8 +351,9 @@ header {
     }
 
      .primeiro {
-      background: url('../assets/cidade.jpg'), rgba(0,0,0,.5) !important;
-      background-blend-mode: multiply;
+      background: url('../assets/cidade.jpg'), rgba(0,0,0,.6) !important;
+      background-blend-mode: overlay;
+      background-position: center, bottom;
       background-repeat: no-repeat !important; 
       background-size: cover !important;
     }
@@ -399,19 +399,18 @@ header {
         font-size: 1rem;
         margin-top: 50px;
         margin-right: 10px;
-        color: #fff;
+        color: #272830;
         font-weight: 500;
         border: none;
         cursor: pointer;
-        border-radius: 50px;
-        background-color: #7601e0;
+        background-color: #fff;
         font-weight: 500;
         transition: .5s;
     }
 
     .banner .btn:hover {
-      background: #7601e0;
-      color: #fff;
+      background: #fff;
+      color: #272830;
       opacity: .5;
     }
     
@@ -496,15 +495,138 @@ header {
     }
 
     #anuncio {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
+      padding-top: 10rem;
+      
     }
 
-    #anuncio h1 {
+    #anuncio .imagem {
       text-align: center;
-      color: #fff;
     }
 
+
+    #anuncio img {
+      width: 80%;
+    }
+
+
+    /* The Modal (background) */
+.modal-aviso {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-aviso-content {
+  position: relative;
+  background: #000;
+  margin: auto;
+  border-radius: 10px;
+  border: 0;
+  padding: 2rem;
+  width: 30%;
+  border: 1px solid #7401e064;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close-aviso {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.close-aviso:hover,
+.close-aviso:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: .5;
+}
+
+.modal-aviso-header {
+  padding: 2px 16px;
+
+  color: #fff;
+}
+
+.modal-aviso-header h2 {
+  font-weight: 400;
+}
+
+.modal-aviso-header img {
+  padding-top: 1rem;
+}
+
+.modal-aviso-body {
+  color: #fff;
+  padding: 2px 16px;
+  padding-top: 2rem;
+}
+
+.modal-aviso-body form input {
+  width: 100%;
+  padding: .6rem;
+  margin-bottom: .5rem;
+  background: rgba(255,255,255,.05);
+  border: 0;
+  color: #fff;
+}
+
+.modal-aviso-body form button {
+  width: 100%;
+  padding: .6rem;
+  border: 0;
+  background: #7601e0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: .3s;
+}
+
+
+.modal-aviso-body form button:hover {
+  opacity: .5;
+}
+
+
+.modal-aviso-footer {
+  padding: 2px 16px;
+
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .modal-aviso-content {
+    width: 100%;
+    height: 100vh;
+  }
+}
  
 
     #assistidos {
@@ -616,6 +738,7 @@ header {
       margin-top: 3rem;
       margin-right: 1rem;
       width: 100%;
+      z-index: 999;
       border-radius: 8px;
       color: #fff;
     }
@@ -725,7 +848,7 @@ header {
     @media screen and (max-width: 991px) {
 
       #assistidos {
-        padding-top: 10rem;
+        padding-top: 5rem;
       }
 
       #assistidos h4 {
@@ -740,7 +863,7 @@ header {
 
 
       #assistidos .progresso .card-content img {
-        display: none;
+      width: 50%;
       }
 
       #assistidos .progresso .card-content {
@@ -795,12 +918,10 @@ header {
       margin-right: 0rem;
       color: #fff;
       display: flex;
-
     }
 
     #aulas .card-content img {
       width: 100%;
-
       border-radius: 10px;
     }
 
@@ -889,6 +1010,7 @@ header {
   #conteudos .card-content {
     overflow: hidden;
     /*width: 70%; */
+
     
   }
 
@@ -989,13 +1111,11 @@ header {
   }
 
   #eps .episodios .ep .badge {
-    background: rgba(255,255,255,.1);
-    width: 20%;
-    text-align: center;
+    
+
+    text-align: left;
     padding: 0rem;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
+
     padding-top: 12px;
     transition: .3s;
     border-radius: 5px;
@@ -1036,12 +1156,12 @@ header {
   @media screen and (max-width: 991px) {
 
     #eps h4 {
-      padding-top: 5rem;
+      padding-top: 2rem;
     }
 
     #eps .episodios {
       width: 100%;
-      padding-top: 5rem;
+      padding-top: 2rem;
     }
 
     #eps .episodios .ep .badge {
@@ -1134,7 +1254,7 @@ header {
   }
 
   footer .logo img {
-    width: 6%;
+    width: 20%;
   }
 
   footer p {
@@ -1173,6 +1293,10 @@ header {
       padding-top: 1rem;
     }
 
+  }
+
+  a {
+    text-decoration: none !important;
   }
 
   .img-fluid {

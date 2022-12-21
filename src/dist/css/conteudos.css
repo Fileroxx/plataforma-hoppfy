@@ -227,7 +227,7 @@ header .ul-profile a:hover {
     background-color: #222222;
 
     width: 100%;
-    max-width: 250px;
+    max-width: 991px;
 
     padding: 100px 20px;
 
@@ -264,13 +264,28 @@ main {
     color: #fff;
 }
 
+main h1 {
+  padding-bottom: 2rem;
+  color: #fff;
+  font-size: 2rem;
+}
+
 main .apresentacao {
-   background: rgba(119, 121, 177, 0.1);
+
    width: 100%;
    margin: 0 auto;
   padding-top: 2rem;
   padding-bottom: 2rem;
    margin-top: 6rem;
+   text-align: center;
+  transition: .5s;
+  cursor: pointer;
+}
+
+
+main .apresentacao img {
+  width: 100%;
+  height: 40vh;
 }
 
 main .apresentacao h1 {
@@ -294,6 +309,7 @@ main .conteudos {
 }
 
 
+
 .shadowMenu {
   background: rgba(0,0,0,.8);
   background-size: cover;
@@ -314,13 +330,17 @@ main .conteudos .card-content {
     flex-direction: row;
     width: 100%;
     margin-bottom: 4rem;
+    transition: .5s;
   }
+
+main .conteudos .card-content:hover {
+  transform: scale(1.02);
+}
 
 main .conteudos .card-content img {
     border-radius: 10px;
     width: 100%;
     height: 100%;
-  
   }
 
   .intro {
@@ -436,8 +456,8 @@ footer .container {
   }
 
   @media screen and (max-width: 991px) {
-    footer {
-      display: flex;
+    footer .container {
+      display: flex !important;
       flex-direction: column;
       justify-content: center;
     }
@@ -453,6 +473,7 @@ footer .container {
     footer p {
       font-size: .9rem;
       padding-top: 1rem;
+      text-align: center;
     }
 
   }
